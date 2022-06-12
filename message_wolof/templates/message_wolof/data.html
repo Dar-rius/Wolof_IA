@@ -17,18 +17,20 @@
         </div>
     </header>
 
-    {% for message in messages%}
-
-    <table>
-        <tr>
-            <th>Message</th>
-            <th>Emotion</th>
-        </tr>
-        <tr>
-            <td>{{message.message}}</td>
-            <td>{{message.emotion}}</td>
-        </tr>
-     </table>
-    {% endfor %}
+    <section>
+        <div class="sec1">
+            {% for message in messages%}
+                <div class="sec2">
+                    <p class="message">
+                        {{message.message}}
+                    </p>
+        
+                    <p class="emotion">
+                        {{message.emotion}}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 </body>
 </html>
