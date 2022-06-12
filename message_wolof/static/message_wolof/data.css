@@ -5,6 +5,30 @@ header div{
     margin-right: 2%;
 }
 
+.link_2{
+    color: #e4002b;
+    margin-left: 2%;
+    font-size: larger;
+}
+
+.link_3{
+    color: #e9bc3f;
+    margin-left: 2%;
+    font-size: larger;
+}
+
+.link_1{
+    color: #10a2f5;
+    margin-left: 2%;
+    font-size: larger;
+}
+
+
+body{
+    font-family: "Roboto Mono", monospace;
+    font-size: large;
+}
+
 table
 {
     border-collapse: collapse; 

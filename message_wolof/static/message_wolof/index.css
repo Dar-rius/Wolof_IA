@@ -3,6 +3,7 @@ header div{
     text-align: end;
     font-size: large;
     margin-right: 2%;
+
 }
 
 section{
@@ -10,11 +11,13 @@ section{
     align-items: center;
     justify-content: space-around;
     margin-top: 6%;
+    flex-wrap: wrap;
 
 }
 
 .text{
     width: 50%;
+    margin-bottom: 5%;
 }
 
 select{
