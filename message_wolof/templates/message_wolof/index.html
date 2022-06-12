@@ -11,19 +11,27 @@
 <body>
     <header>
         <div>
-            <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'data' %}">Data</a>
-            <a href="{% url 'developpeur' %}">developpeur</a>
-            <a href="{% url 'ia' %}">Intelligence atificielle</a>
+            <a class="link_1" href="{% url 'home' %}">Home</a>
+            <a class="link_2" href="{% url 'data' %}">Data</a>
+            <a class="link_3" href="{% url 'ia' %}">Intelligence atificielle</a>
         </div>
     </header>
 
     <section>
-        <div>
-            Le but du projet est de créer une plateforme dont les gens pourront écrire sur la manière dont ils apprécient 
-            ou non une personnalité en langue wolof, ces message seront ensuite enregistrer dans une base de donnée, 
-            puis les données contenu seront utilisés pour entraîner des modèles de machine learning à reconnaître un message 
-            positif ou négatif ou entraîner un réseau récurrent.
+
+        <div class="text">
+            <h1>Salut👋 et bienvenu(e)</h1>
+
+            ceci c’est une plateforme web qui vous permettra de contribuer à un projet sur l’intelligence artificielle. </br>
+            Le projet consiste à écrire des milliers de messages en langue wolof sur des événements marquant dont les émotions sont soit positif ou négatif, 
+            ces messages seront ensuite stockés et extrait dans une base de donnée afin de le former une intelligence artificielle à comprendre les messages 
+            en wolof et qu’il puisse déterminer si le message dégage un sentiment positif ou négatif.
+            </br>A la fin du développement de l’intelligence artificielle vous pourrez le tester en lui écrivant un message et dont il va déterminer si votre message dégage une 
+            émotion positive ou négative.
+            </br> </br>
+            Votre rôle dans ce projet est d'écrire un ou plusieurs messages en wolof sur un événement dont vous avez vécu et vous devez préciser votre sentiment envers ce message (positif ou négatif). </br>
+            Si vous êtes développeur et vous voudriez contribuer au projet cliquer sur ce lien
+
         </div>
 
         <form method="post">
@@ -32,21 +40,16 @@
             {{ form.non_field_errors }}
             <div class="fieldWrapper">
                 {{ form.subject.errors }}
-                <label for="{{ form.message.id_for_label }}">Donnez un message:</label>
-                {{ form.message }}
-            </div>
-            <div class="fieldWrapper">
-                {{ form.nom_personnalite.errors }}
-                <label for="{{ form.nom_personnalite.id_for_label }}">Donnez le nom de la personnalité:</label>
-                {{ form.nom_personnalite }}
+                <label for="{{ form.message.id_for_label }}">Donnez un message:</label></br></br>
+                <span class="input">{{ form.message }}</span>
             </div>
             <div class="fieldWrapper">
                 {{ form.emotion.errors }}
-                <label for="{{ form.emotion.id_for_label }}">quelle emotion ressentez vous ?</label>
+                <label for="{{ form.emotion.id_for_label }}">quelle emotion ressentez vous ?</label></br></br>
                 {{ form.emotion }}
-            </div>
+            </div></br></br>
 
-            <input type="submit" value="Envoyer">
+            <input class="bouton" type="submit" value="Envoyer">
         </form>
     </section>
 </body>

@@ -31,9 +31,5 @@ def data_view(request):
     return render(request, 'message_wolof/data.html', context)
 
 
-def developer_view(request):
-    return render(request, 'message_wolof/developer.html', {})
-
-
 def ai_view(request):
     return render(request, 'message_wolof/ai.html', {})

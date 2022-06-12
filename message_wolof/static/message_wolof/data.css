@@ -1,0 +1,15 @@
+header div{
+    margin-top: 2%;
+    text-align: end;
+    font-size: large;
+    margin-right: 2%;
+}
+
+table
+{
+    border-collapse: collapse; 
+}
+td
+{
+    border: 1px solid black;
+}

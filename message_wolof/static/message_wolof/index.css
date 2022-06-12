@@ -1,10 +1,78 @@
 header div{
+    margin-top: 2%;
     text-align: end;
     font-size: large;
+    margin-right: 2%;
 }
 
 section{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 6%;
+
+}
+
+.text{
+    width: 50%;
+}
+
+select{
+    width: 65%;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+
+}
+
+textarea{
+    width: 100%;
+    font-size: large;
+}
+
+textarea{
+    resize: none;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+    font-size: large;
+}
+
+.link_2{
+    color: #e4002b;
+    margin-left: 2%;
+    font-size: larger;
+}
+
+.link_3{
+    color: #e9bc3f;
+    margin-left: 2%;
+    font-size: larger;
+}
+
+.link_1{
+    color: #10a2f5;
+    margin-left: 2%;
+    font-size: larger;
+}
+
+label{
+    font-size: larger;
+
+}
+
+form{
+}
+
+.bouton{
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e4002b;;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #e4002b;;
+    font-size: 1rem;
+    overflow: auto;
+    transition: 0.4s ease all;
 }
