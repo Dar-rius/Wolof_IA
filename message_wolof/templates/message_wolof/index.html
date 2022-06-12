@@ -7,6 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HEY</h1>
+    <header>
+        <div>
+            <a href="">Home</a>
+            <a href="">Data</a>
+            <a href="">developpeur</a>
+            <a href="">AI</a>
+        </div>
+    </header>
+
+    <section>
+        <div>
+            Le but du projet est de créer une plateforme dont les gens pourront écrire sur la manière dont ils apprécient 
+            ou non une personnalité en langue wolof, ces message seront ensuite enregistrer dans une base de donnée, 
+            puis les données contenu seront utilisés pour entraîner des modèles de machine learning à reconnaître un message 
+            positif ou négatif ou entraîner un réseau récurrent.
+        </div>
+
+        <form method="post">
+            {%csrf_token%}
+
+            {{ form.non_field_errors }}
+            <div class="fieldWrapper">
+                {{ form.subject.errors }}
+                <label for="{{ form.message.id_for_label }}">Donnez un message:</label>
+                {{ form.message }}
+            </div>
+            <div class="fieldWrapper">
+                {{ form.nom_personnalite.errors }}
+                <label for="{{ form.nom_personnalite.id_for_label }}">Donnez le nom de la personnalité:</label>
+                {{ form.nom_personnalite }}
+            </div>
+            <div class="fieldWrapper">
+                {{ form.emotion.errors }}
+                <label for="{{ form.emotion.id_for_label }}">quelle emotion ressentez vous ?</label>
+                {{ form.emotion }}
+            </div>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
 </body>
 </html>

@@ -6,18 +6,19 @@ from .models import Message_wolof
 # Create your views here.
 def index_view(request):
 
-    forms = FormMessage(request.Post)
+    form = FormMessage(request.POST)
     
-    if forms.is_valid():
-        forms.save()
+    if form.is_valid():
+        form.save()
+        return redirect('data')
         
     else:
-        forms = FormMessage()
+        form = FormMessage()
 
     context = {
-        'forms': forms
+        'form': form
     }
-    return render(request, 'message_wolof/index.html', {context})
+    return render(request, 'message_wolof/index.html', context)
 
 
 def data_view(request):
