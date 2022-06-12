@@ -1,0 +1,10 @@
+header div{
+    text-align: end;
+    font-size: large;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

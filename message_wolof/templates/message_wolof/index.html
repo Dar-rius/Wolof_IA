@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet"  type="text/css" href="{% static 'message_wolof/index.css' %}" />
     <title>Document</title>
 </head>
 <body>
     <header>
         <div>
-            <a href="">Home</a>
-            <a href="">Data</a>
-            <a href="">developpeur</a>
-            <a href="">AI</a>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'data' %}">Data</a>
+            <a href="{% url 'developpeur' %}">developpeur</a>
+            <a href="{% url 'ia' %}">Intelligence atificielle</a>
         </div>
     </header>
 
