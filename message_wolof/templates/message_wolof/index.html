@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link rel="stylesheet"  type="text/css" href="{% static 'message_wolof/home.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'ia.png' %}"/>
     <title>Document</title>
 </head>
 <body>
     <header>
         <div>
-            <a class="link_1" href="{% url 'home' %}">Home</a>
-            <a class="link_2" href="{% url 'data' %}">Data</a>
+            <a class="link_1" href="{% url 'home' %}">Accueil</a>
+            <a class="link_2" href="{% url 'data' %}">Donnee</a>
             <a class="link_3" href="{% url 'ia' %}">Intelligence atificielle</a>
         </div>
     </header>
