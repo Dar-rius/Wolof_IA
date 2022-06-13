@@ -84,3 +84,22 @@ form{
     overflow: auto;
     transition: 0.4s ease all;
 }
+
+@media only screen and (max-width: 865px){
+    .text{
+        width: 90%;
+    }   
+}
+
+@media only screen and (max-width: 650px){
+    .text{
+        width: 90%;
+    }   
+
+    header div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

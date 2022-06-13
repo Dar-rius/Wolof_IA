@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <link rel="stylesheet"  type="text/css" href="{% static 'message_wolof/index.css' %}" />
+    <link rel="stylesheet"  type="text/css" href="{% static 'message_wolof/home.css' %}" />
     <title>Document</title>
 </head>
 <body>
@@ -40,12 +40,12 @@
             {{ form.non_field_errors }}
             <div class="fieldWrapper">
                 {{ form.subject.errors }}
-                <label for="{{ form.message.id_for_label }}">Donnez un message:</label></br></br>
+                <label for="{{ form.message.id_for_label }}">Entrez un message sur un événement:</label></br></br>
                 <span class="input">{{ form.message }}</span>
             </div></br>
             <div class="fieldWrapper">
                 {{ form.emotion.errors }}
-                <label for="{{ form.emotion.id_for_label }}">quelle emotion ressentez vous ?</label></br></br>
+                <label for="{{ form.emotion.id_for_label }}">Préciser l'émotion ressentie</label></br></br>
                 {{ form.emotion }}
             </div></br></br>
 
