@@ -19,5 +19,5 @@ from message_wolof import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include(urls)),
+    path('', include(urls)),
 ]
