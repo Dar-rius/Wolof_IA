@@ -18,6 +18,7 @@ from django.urls import path, include
 from message_wolof import urls
 
 urlpatterns = [
+    path('', include(urls)),
     path('admin/', admin.site.urls),
     path('message_ia/', include(urls)),
 ]

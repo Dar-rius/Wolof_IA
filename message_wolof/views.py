@@ -20,6 +20,9 @@ def index_view(request):
     }
     return render(request, 'message_wolof/index.html', context)
 
+def redirect_view(request):
+    return redirect('home')
+
 
 def data_view(request):
     messages = Message_wolof.objects.all()
