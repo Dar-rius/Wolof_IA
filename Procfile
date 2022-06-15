@@ -1,1 +1,1 @@
-web: gunicorn data.wsgi
+web: gunicorn data.wsgi:application --log-file -
