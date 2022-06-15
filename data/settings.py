@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p68!f&$@-ibtsiw)h$_$gxp@25@q_wkog$h$&h!)vm$y5k%!sb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['messageai.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
