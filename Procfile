@@ -1,1 +1,1 @@
-web: bundle exec rails server -p $PORT
+web: python manage.py runserver
