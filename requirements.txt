@@ -7,5 +7,4 @@ psycopg2==2.9.3
 python-dotenv==0.20.0
 sqlparse==0.4.2
 tzdata==2022.1
-waitress==2.1.2
 whitenoise==6.2.0
