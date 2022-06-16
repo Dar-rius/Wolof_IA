@@ -15,10 +15,7 @@ def index_view(request):
     else:
         form = FormMessage()
 
-    context = {
-        'form': form
-    }
-    return render(request, 'message_wolof/index.html', context)
+    return render(request, 'message_wolof/index.html', {'form': form})
 
 def redirect_view(request):
     return redirect('home')
@@ -27,11 +24,8 @@ def redirect_view(request):
 def data_view(request):
     messages = Message_wolof.objects.all()
 
-    context = {
-        "messages": messages
-    }
 
-    return render(request, 'message_wolof/data.html', context)
+    return render(request, 'message_wolof/data.html', {'messages': messages})
 
 
 def ai_view(request):
