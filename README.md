@@ -14,14 +14,14 @@ Une fois le modèle entraîné, il sera exporté vers le serveur de l’applicat
 
 ### Application web
 
-Pour travailler sur ce vous devez avoir ceci:
+Pour travailler sur ce projet vous devez avoir ceci:
 
 ``python (3.0+)``
 
 #### Installation du projet
 
 ```
-git clone https://github.com/Dar-rius/Wolof_IA.gi
+git clone https://github.com/Dar-rius/Wolof_IA.git
 cd Wolof_IA
 ```
 
