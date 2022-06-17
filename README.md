@@ -65,3 +65,12 @@ python manage.py runserver
 
 Dans votre navigateur copier et coller ceci:
 ``localhost:8000``
+
+#### Routes
+## Routes
+
+Routes | Utilités
+-------| -----------------------------------
+home/  | Page d'accueille
+data/  | Liste des messages et leur labels
+ia/    |  Tester les modeles
