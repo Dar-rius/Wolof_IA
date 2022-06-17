@@ -12,12 +12,26 @@ Une fois le modèle entraîné, il sera exporté vers le serveur de l’applicat
 
 ## Exigence pour le developpement 
 
-### Appication web
+### Application web
 
-#### Installation
+Pour travailler sur ce vous devez avoir ceci:
+
+``python (3.0+)``
+
+#### Installation du projet
 
 ``git clone https://github.com/Dar-rius/Wolof_IA.git``
+``cd Wolof_IA``
 
 #### Installation des libraries
 
 ``pip install -r requirements.txt``
+
+``# Windows``
+`` py manage.py runserver ``
+
+`` # Linux ``
+`` python3 manage.py runserver ``
+
+``MaxOS``
+`` python manage.py runserver ``
