@@ -36,6 +36,6 @@ py manage.py runserver
 # Linux:
 python3 manage.py runserver
 
-#MaxOS:
+# MaxOS:
 python manage.py runserver 
 ```
