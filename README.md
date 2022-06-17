@@ -64,7 +64,7 @@ python3 manage.py runserver
 python manage.py runserver 
 ````
 
-Dans votre navigateur copier et coller ceci:
+Dans votre navigateur tapez  ceci:
 ``localhost:8000/``
 
 #### Routes
