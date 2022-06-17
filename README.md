@@ -31,11 +31,11 @@ Pour travailler sur ce projet vous devez avoir ceci:
  
  cd message_wolof
  
- # Activer l'environnement
- # windows:
+# Activer l'environnement
+# windows:
  Scripts\activate
  
- # Linux et MacOS:
+# Linux et MacOS:
  source bin/activate
 ````
 
