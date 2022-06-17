@@ -30,7 +30,7 @@ cd Wolof_IA
 ``pip install -r requirements.txt``
 
 ```
-# Windows:
+## Windows:
 py manage.py runserver 
 
 # Linux:
