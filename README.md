@@ -44,6 +44,7 @@ Pour travailler sur ce projet vous devez avoir ceci:
 
 ```
 git clone https://github.com/Dar-rius/Wolof_IA.git
+
 cd Wolof_IA
 ```
 
@@ -67,7 +68,6 @@ Dans votre navigateur copier et coller ceci:
 ``localhost:8000``
 
 #### Routes
-## Routes
 
 Routes | Utilités
 -------| -----------------------------------
