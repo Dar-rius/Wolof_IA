@@ -18,8 +18,8 @@ Pour travailler sur ce projet vous devez avoir ceci:
 
 ``python (3.0+)``
 
+#### Créer un environnement virtuel
 ````
-# Créer un environnement virtuel
 # Windows:
  py -m venv message_wolof
  
@@ -32,6 +32,7 @@ Pour travailler sur ce projet vous devez avoir ceci:
  cd message_wolof
  
 # Activer l'environnement
+
 # windows:
  Scripts\activate
  
@@ -50,6 +51,7 @@ cd Wolof_IA
 
 ``pip install -r requirements.txt``
 
+#### Executer le serveur
 ````
 # Windows:
 py manage.py runserver 
