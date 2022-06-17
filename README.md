@@ -16,7 +16,7 @@ Une fois le modèle entraîné, il sera exporté vers le serveur de l’applicat
 
 Pour travailler sur ce projet vous devez avoir ceci:
 
-``python (3.0+)``
+``python (3.10+)``
 
 #### Créer un environnement virtuel
 ````
