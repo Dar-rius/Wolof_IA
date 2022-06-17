@@ -39,3 +39,6 @@ python3 manage.py runserver
 # MaxOS:
 python manage.py runserver 
 ````
+
+Copier et coller ceci dans votre navigateur:
+``localhost:8000``
