@@ -40,5 +40,5 @@ python3 manage.py runserver
 python manage.py runserver 
 ````
 
-Copier et coller ceci dans votre navigateur:
+Dans votre navigateur copier et coller ceci:
 ``localhost:8000``
