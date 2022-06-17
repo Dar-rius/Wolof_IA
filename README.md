@@ -7,7 +7,17 @@ Les modèles seront ensuite exportés sous forme d’API pour être utilisé dan
 
 ## Description
 
-Les visiteurs devront entrer un ou plusieurs messages parlant d’un événement qui leur a marquer puis devront préciser l'émotion qu’ils ont ressenti sur cet événement entre positive ou négative, après tout ceci les messages seront enregistrer dans une base de donnée en sqlite3 et extrait de la base de donnée pour entraîner un modèle de machine learning. 
-Une fois le modèle entraîné, il sera exporté vers le serveur de l’application web pour être tester par les visiteurs du site.
+La plateforme est une application web développée avec le framework django, dedans les  visiteurs devront entrer un ou plusieurs messages parlant d’un événement qui leur a marquer puis devront préciser l'émotion qu’ils ont ressenti sur cet événement entre positive ou négative, après tout ceci les messages seront enregistrer dans une base de donnée en sqlite3 et extrait de la base de donnée pour entraîner un modèle de machine learning. 
+Une fois le modèle entraîné, il sera exporté vers le serveur de l’application web pour être testé par les visiteurs du site.
 
 ## Exigence pour le developpement 
+
+### Appication web
+
+#### Installation
+
+``git clone https://github.com/Dar-rius/Wolof_IA.git``
+
+#### Installation des libraries
+
+``pip install -r requirements.txt``
