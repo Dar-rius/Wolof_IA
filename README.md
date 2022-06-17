@@ -29,8 +29,8 @@ cd Wolof_IA
 
 ``pip install -r requirements.txt``
 
-```
-## Windows:
+````
+# Windows:
 py manage.py runserver 
 
 # Linux:
@@ -38,4 +38,4 @@ python3 manage.py runserver
 
 # MaxOS:
 python manage.py runserver 
-```
+````
