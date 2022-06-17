@@ -20,18 +20,22 @@ Pour travailler sur ce vous devez avoir ceci:
 
 #### Installation du projet
 
-``git clone https://github.com/Dar-rius/Wolof_IA.git``
-``cd Wolof_IA``
+```
+git clone https://github.com/Dar-rius/Wolof_IA.gi
+cd Wolof_IA
+```
 
 #### Installation des libraries
 
 ``pip install -r requirements.txt``
 
-``# Windows``
-`` py manage.py runserver ``
+```
+# Windows:
+py manage.py runserver 
 
-`` # Linux ``
-`` python3 manage.py runserver ``
+# Linux:
+python3 manage.py runserver
 
-``MaxOS``
-`` python manage.py runserver ``
+MaxOS:
+python manage.py runserver 
+```
