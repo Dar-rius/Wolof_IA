@@ -18,6 +18,27 @@ Pour travailler sur ce projet vous devez avoir ceci:
 
 ``python (3.0+)``
 
+````
+# Créer un environnement virtuel
+# Windows:
+ py -m venv message_wolof
+ 
+# Linux:
+ python3 -m venv message_wolof
+ 
+# MacOS:
+ python -m venv message_wolof
+ 
+ cd message_wolof
+ 
+ # Activer l'environnement
+ # windows:
+ Scripts\activate
+ 
+ # Linux et MacOS:
+ source bin/activate
+````
+
 #### Installation du projet
 
 ```
