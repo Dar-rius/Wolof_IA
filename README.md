@@ -1,3 +1,5 @@
+# Wolof IA
+
 L’objectif est de créer plusieurs dataset sur des messages écrit en wolof afin d'être utilisé pour entraîner des modèles de machine pour plusieurs raisons:
 1. Détecter les sentiments.
 2. Détecter la satisfaction d’une personne envers un produit. 
