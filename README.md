@@ -21,26 +21,28 @@ Pour travailler sur ce projet vous devez avoir ceci:
 ``python (3.10+)``
 
 #### Créer un environnement virtuel
-```
-# Windows:
-$ py -m venv message_wolof
- 
-# Linux:
-$ python3 -m venv message_wolof
- 
-# MacOS:
-$ python -m venv message_wolof
- 
-$ cd message_wolof
- 
-# Activer l'environnement
 
-# Windows:
-$ Scripts\activate
+Windows
+
+```$ py -m venv message_wolof```
  
-# Linux et MacOS:
-$ source bin/activate
-```
+Linux
+
+```$ python3 -m venv message_wolof```
+
+Changer de repetoire
+
+```$ cd message_wolof```
+ 
+Activer l'environnement
+
+Windows
+
+```$ Scripts\activate```
+ 
+Linux et MacOS
+
+```$ source bin/activate```
 
 #### Installation du projet
 
@@ -55,16 +57,12 @@ $ cd Wolof_IA
 ``$ pip install -r requirements.txt``
 
 #### Executer le serveur
-```
-# Windows:
-$ py manage.py runserver 
 
-# Linux:
-$ python3 manage.py runserver
+Windows
+```$ py manage.py runserver ```
 
-# MacOS:
-$ python manage.py runserver 
-```
+Linux
+```$ python3 manage.py runserver```
 
 Dans votre navigateur tapez  ceci:
 ``localhost:8000``
@@ -76,10 +74,6 @@ Routes | Utilités
 home/  | Page d'accueille
 data/  | Liste des messages et leur labels
 ia/    |  Tester les modeles
-
-### Deployement
-
-La plateforme est déployée sur heroku 
 
 ### Machine Learning
 
