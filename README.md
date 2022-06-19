@@ -75,7 +75,7 @@ home/  | Page d'accueille
 data/  | Liste des messages et leur labels
 ia/    |  Tester les modeles
 
-#### Deployement
+### Deployement
 
 La plateforme est déployée sur heroku 
 
