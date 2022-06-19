@@ -23,51 +23,51 @@ Pour travailler sur ce projet vous devez avoir ceci:
 #### Créer un environnement virtuel
 ````
 # Windows:
- py -m venv message_wolof
+$ py -m venv message_wolof
  
 # Linux:
- python3 -m venv message_wolof
+$ python3 -m venv message_wolof
  
 # MacOS:
- python -m venv message_wolof
+$ python -m venv message_wolof
  
- cd message_wolof
+$ cd message_wolof
  
 # Activer l'environnement
 
-# windows:
- Scripts\activate
+# Windows:
+$ Scripts\activate
  
 # Linux et MacOS:
- source bin/activate
+$ source bin/activate
 ````
 
 #### Installation du projet
 
 ```
-git clone https://github.com/Dar-rius/Wolof_IA.git
+$ git clone https://github.com/Dar-rius/Wolof_IA.git
 
-cd Wolof_IA
+$ cd Wolof_IA
 ```
 
 #### Installation des libraries
 
-``pip install -r requirements.txt``
+``$ pip install -r requirements.txt``
 
 #### Executer le serveur
 ````
 # Windows:
-py manage.py runserver 
+$ py manage.py runserver 
 
 # Linux:
-python3 manage.py runserver
+$ python3 manage.py runserver
 
 # MacOS:
-python manage.py runserver 
+$ python manage.py runserver 
 ````
 
 Dans votre navigateur tapez  ceci:
-``localhost:8000/``
+``localhost:8000``
 
 #### Routes
 
