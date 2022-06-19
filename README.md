@@ -75,6 +75,11 @@ home/  | Page d'accueille
 data/  | Liste des messages et leur labels
 ia/    |  Tester les modeles
 
+#### Deployement
+
+La plateforme est déployée sur heroku 
+
 ### Machine Learning
 
-Arrivera une fois qu’il y aura suffisamment  de données dont les modèles devront traités
+En cours 
+> Arrivera une fois qu’il y aura suffisamment  de données dont les modèles devront traités
