@@ -59,9 +59,11 @@ $ cd Wolof_IA
 #### Executer le serveur
 
 Windows
+
 ```$ py manage.py runserver ```
 
 Linux
+
 ```$ python3 manage.py runserver```
 
 Dans votre navigateur tapez  ceci:
