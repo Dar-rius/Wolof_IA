@@ -21,7 +21,7 @@ Pour travailler sur ce projet vous devez avoir ceci:
 ``python (3.10+)``
 
 #### Créer un environnement virtuel
-````
+```
 # Windows:
 $ py -m venv message_wolof
  
@@ -40,7 +40,7 @@ $ Scripts\activate
  
 # Linux et MacOS:
 $ source bin/activate
-````
+```
 
 #### Installation du projet
 
@@ -55,7 +55,7 @@ $ cd Wolof_IA
 ``$ pip install -r requirements.txt``
 
 #### Executer le serveur
-````
+```
 # Windows:
 $ py manage.py runserver 
 
@@ -64,7 +64,7 @@ $ python3 manage.py runserver
 
 # MacOS:
 $ python manage.py runserver 
-````
+```
 
 Dans votre navigateur tapez  ceci:
 ``localhost:8000``
