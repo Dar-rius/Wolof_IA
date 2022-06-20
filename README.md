@@ -55,9 +55,21 @@ $ git clone https://github.com/Dar-rius/Wolof_IA.git
 $ cd Wolof_IA
 ```
 
-#### Installation des libraries
+#### Installation des librairies
+
+Windows
 
 ``$ pip install -r requirements.txt``
+
+Linux
+
+``
+#Installer libpq-dev
+$ sudo apt install libpq-dev
+
+#Installer les librairies
+$ pip3 install -r requirements.txt
+``
 
 #### Executer le serveur
 
