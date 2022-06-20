@@ -55,7 +55,7 @@ $ git clone https://github.com/Dar-rius/Wolof_IA.git
 $ cd Wolof_IA
 ```
 
-#### Installation des librairies
+#### Installation des dependances
 
 Windows
 
@@ -67,7 +67,7 @@ Linux
 #Installer libpq-dev
 $ sudo apt install libpq-dev
 
-#Installer les librairies
+#Installer les dependances
 $ pip3 install -r requirements.txt
 ```
 
