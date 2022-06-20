@@ -24,11 +24,11 @@ Pour travailler sur ce projet vous devez avoir ceci:
 
 Windows
 
-```$ py -m venv message_wolof```
+```$ py -m venv wolof_ia```
  
 Linux
 
-```$ python3 -m venv message_wolof```
+```$ python3 -m venv wolof_ia```
 
 Changer de repetoire
 
