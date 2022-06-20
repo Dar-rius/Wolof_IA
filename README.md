@@ -114,4 +114,4 @@ Signaler les problèmes que vous avez rencontrés en [ouvrant un issue](https://
 Lorsque vous voudrez fusionner les modifications que vous avez réalisé au projet sur github, ourez un [pull request](https://github.com/Dar-rius/Wolof_IA/pulls).
 
 ## Licence
-La licence utilisée est celle de [MIT](https://github.com/Dar-rius/Wolof_IA/blob/main/licence)
+La licence utilisée est celle du [MIT](https://github.com/Dar-rius/Wolof_IA/blob/main/licence)
