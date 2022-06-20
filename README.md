@@ -1,3 +1,5 @@
+# Wolof IA
+
 L’objectif est de créer plusieurs dataset sur des messages écrit en wolof afin d'être utilisé pour entraîner des modèles de machine pour plusieurs raisons:
 1. Détecter les sentiments.
 2. Détecter la satisfaction d’une personne envers un produit. 
@@ -19,53 +21,53 @@ Pour travailler sur ce projet vous devez avoir ceci:
 ``python (3.10+)``
 
 #### Créer un environnement virtuel
-````
-# Windows:
- py -m venv message_wolof
- 
-# Linux:
- python3 -m venv message_wolof
- 
-# MacOS:
- python -m venv message_wolof
- 
- cd message_wolof
- 
-# Activer l'environnement
 
-# windows:
- Scripts\activate
+Windows
+
+```$ py -m venv wolof_ia```
  
-# Linux et MacOS:
- source bin/activate
-````
+Linux
+
+```$ python3 -m venv wolof_ia```
+
+Changer de repetoire
+
+```$ cd message_wolof```
+ 
+Activer l'environnement
+
+Windows
+
+```$ Scripts\activate```
+ 
+Linux et MacOS
+
+```$ source bin/activate```
 
 #### Installation du projet
 
 ```
-git clone https://github.com/Dar-rius/Wolof_IA.git
+$ git clone https://github.com/Dar-rius/Wolof_IA.git
 
-cd Wolof_IA
+$ cd Wolof_IA
 ```
 
 #### Installation des libraries
 
-``pip install -r requirements.txt``
+``$ pip install -r requirements.txt``
 
 #### Executer le serveur
-````
-# Windows:
-py manage.py runserver 
 
-# Linux:
-python3 manage.py runserver
+Windows
 
-# MacOS:
-python manage.py runserver 
-````
+```$ py manage.py runserver ```
+
+Linux
+
+```$ python3 manage.py runserver```
 
 Dans votre navigateur tapez  ceci:
-``localhost:8000/``
+``localhost:8000``
 
 #### Routes
 
@@ -74,3 +76,20 @@ Routes | Utilités
 home/  | Page d'accueille
 data/  | Liste des messages et leur labels
 ia/    |  Tester les modeles
+
+### Machine Learning
+
+En cours 
+> Arrivera une fois qu’il y aura suffisamment  de données dont les modèles devront traités
+
+## Contribution
+
+Merci de votre intérêt pour ce projet, nous essayons de fournir un bon environnement de collaboration pour toutes les personnes impliquées.
+
+Le projet est encore à ses débuts et seul l’application web est terminée. Pour contribuer vous pouvez alimenter la base de donnée via la plateforme en écrivant des messages en wolof sur des événement qui vous ont marqués et en précisant l'émotion ressentie dans cet événement. 
+
+Signaler les problèmes que vous avez rencontrés en [ouvrant un issue](https://github.com/Dar-rius/Wolof_IA/issues), si vous souhaitez améliorer la plateforme en ajoutant des sections, fonctionnalitées ou modifier la conception de la plate-forme nous vous recommandons [d’ouvrir un issue](https://github.com/Dar-rius/Wolof_IA/issues) en précisant vos intentions, pour ne pas gaspiller votre temps. Vous pouvez également contribuer aux tâches qui sont actuellement en cours.
+Lorsque vous voudrez fusionner les modifications que vous avez réalisé au projet sur github, ourez un [pull request](https://github.com/Dar-rius/Wolof_IA/pulls).
+
+## Licence
+La licence utilisée est celle de [MIT](https://github.com/Dar-rius/Wolof_IA/blob/main/licence)
