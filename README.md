@@ -77,6 +77,13 @@ home/  | Page d'accueille
 data/  | Liste des messages et leur labels
 ia/    |  Tester les modeles
 
+#### Doissiers importants
+
+Dossiers       | Utilités
+---------------|------------------------------------
+server         | serveur de l'application web
+message_wolof  | L'application web
+
 ### Machine Learning
 
 En cours 
