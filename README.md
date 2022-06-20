@@ -63,13 +63,13 @@ Windows
 
 Linux
 
-``
+```
 #Installer libpq-dev
 $ sudo apt install libpq-dev
 
 #Installer les librairies
 $ pip3 install -r requirements.txt
-``
+```
 
 #### Executer le serveur
 
