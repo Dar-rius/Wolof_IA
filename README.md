@@ -86,7 +86,7 @@ En cours
 
 Merci de votre intérêt pour ce projet, nous essayons de fournir un bon environnement de collaboration pour toutes les personnes impliquées.
 
-Le projet est encore précoce et seule la l’application web est terminée. Pour contribuer vous pouvez alimenter la base de donnée via la plateforme en écrivant des messages en wolof sur des événement qui vous ont marqués et en précisant l'émotion ressentie dans cet événement. 
+Le projet est encore à ses débuts et seul la l’application web est terminée. Pour contribuer vous pouvez alimenter la base de donnée via la plateforme en écrivant des messages en wolof sur des événement qui vous ont marqués et en précisant l'émotion ressentie dans cet événement. 
 
 Signaler les problèmes que vous avez rencontrés en [ouvrant un issue](https://github.com/Dar-rius/Wolof_IA/issues), si vous souhaitez améliorer la plateforme en ajoutant des sections, fonctionnalitées ou modifier la conception de la plate-forme nous vous recommandons [d’ouvrir un issue](https://github.com/Dar-rius/Wolof_IA/issues) en précisant vos intentions, pour ne pas gaspiller votre temps. Vous pouvez également contribuer aux tâches qui sont actuellement en cours.
 Lorsque vous voudrez fusionner les modifications que vous avez réalisé au projet sur github, ourez un [pull request](https://github.com/Dar-rius/Wolof_IA/pulls).
