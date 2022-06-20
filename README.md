@@ -16,9 +16,12 @@ Une fois le modèle entraîné, il sera exporté vers le serveur de l’applicat
 
 ### Application web
 
-Pour travailler sur ce projet vous devez avoir ceci:
+Pour travailler sur ce projet vous devez installer:
 
-``python (3.10+)``
+``
+python (3.10+) et pip
+``
+
 
 #### Créer un environnement virtuel
 
