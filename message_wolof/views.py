@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import FormMessage
 from .models import Message_wolof
+import sqlite3
+import pandas as pd
 
 # Creation des fonctions d'affichage pour les differents routes
 
@@ -10,16 +12,22 @@ from .models import Message_wolof
 def index_view(request):
     # recuperation des donnees des champs du formulaires lorsqu'une methode POST est passe
     form = FormMessage(request.POST)
-    
+
     #si les donnees sont valides, ils seront enregistre dans la base de donnee
     # et l'utilisateur sera renvoyer vers la page data
     if form.is_valid():
         form.save()
+
+        #Update data in file csv
+        connexion_sql = sqlite3.connect("db.sqlite3")
+        df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
+        df.to_csv("machine_learning/data/messages.csv")
+
         return redirect('data')
         
     # Si non rien ne sera stocker dans la base de donnees
     else:
-        form = FormMessage()
+        form = FormMessage
 
     #la page dont retourne la fonction avec les champs du formulaires
     return render(request, 'message_wolof/index.html', {'form': form})
