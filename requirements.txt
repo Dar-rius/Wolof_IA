@@ -7,3 +7,4 @@ python-dotenv==0.20.0
 sqlparse==0.4.2
 tzdata==2022.1
 whitenoise==6.2.0
+pandas==1.4.3
