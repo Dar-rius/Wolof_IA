@@ -43,10 +43,10 @@ def data_view(request):
     messages = Message_wolof.objects.all()
 
     #la page dont retourne la fonction
-    return render(request, 'message_wolof/data.html', {'messages': messages})
+    return render(request, 'message_wolof/messages.html', {'messages': messages})
 
 #La fonction d'affichage pour la page "ia"
 def ai_view(request):
 
     #la page dont retourne la fonction
-    return render(request, 'message_wolof/ai.html', {})
+    return render(request, 'message_wolof/services.html', {})

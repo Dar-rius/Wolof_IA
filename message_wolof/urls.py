@@ -5,7 +5,7 @@ from . import views
 #Listes des urls de l'appli avec leur fonction d'affichage
 urlpatterns = [
     path('', views.redirect_view, name='redirect'),
-    path('home/', views.index_view, name='home'),
-    path('data/', views.data_view, name='data'),
-    path('ia/', views.ai_view, name='ia')
+    path('accueil/', views.index_view, name='home'),
+    path('messages/', views.data_view, name='data'),
+    path('services/', views.ai_view, name='ia')
 ]
