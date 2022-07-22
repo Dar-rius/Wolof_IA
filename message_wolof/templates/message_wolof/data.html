@@ -1,74 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "_base.html"%}
 
-    <title>Dataset sur des messages en wolof</title>
-    <meta name="description" content="Un dataset contenant plusieurs message en langue wolof sur des événements marquant"/>
-    <meta name="keywords" content="wolof, dataset, dataset de messages en wolof" />
-    <meta name="robots" content="index, follow ">
+{% block content %}
 
-    <meta property="og:title" content="Dataset des messages en wolof" />
-    <meta property="og:description" content="Un dataset contenant plusieurs message en langue wolof sur des événements marquant" />
-    <meta property="og:url" content="https://wolofia.herokuapp.com/message_ia/data/" />
-    <meta property="og:site_name" content="Wolof_IA" />
-    <meta property="og:image" content="https://dribbble.com/shots/15464621-Cafe-chatbot/attachments/7236902?mode=media" />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="Wolof_IA" />
-    <meta name="twitter:title" content="Dataset sur des messages en wolof" />
-    <meta name="twitter:description" content="Un dataset contenant plusieurs message en langue wolof sur des événements marquant" />
-    <meta name="twitter:image" content="https://dribbble.com/shots/15464621-Cafe-chatbot/attachments/7236902?mode=media" />
-
-    {% load static %}
-    <link rel="stylesheet"  type="text/css" href="{% static 'message_wolof/datas.css' %}" />
-    <link rel="shortcut icon" type="image/png" href="{% static 'ia.png' %}"/>
-    <link rel='canonical' href="https://wolofia.herokuapp.com/message_ia/data/" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232492640-1">
-    </script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-232492640-1');
-    </script>
-
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "cfubwp3r57");
-    </script>
-</head>
-
-<body>
-    <header>
-        <div>
-            <a class="link_1" href="{% url 'home' %}">Accueil</a>
-            <a class="link_2" href="{% url 'data' %}">Messages</a>
-            <a class="link_3" href="{% url 'ia' %}">Intelligence atificielle</a>
-        </div>
-    </header>
-
-    <section>
-        <div class="sec1">
-            {% for message in messages%}
-                <div class="sec2">
-                    <p class="message">
-                        {{message.message}}
-                    </p>
-        
-                    <p class="emotion">
-                        {{message.emotion}}
-                    </p>
-                </div>
-            {% endfor %}
-        </div>
+    <section class="data">
+        <table class="dark:bg-gray-800">
+            <thead class="bg-blue-700">
+                <tr class="head">
+                    <th>Phrase</th>
+                    <th>Sentiment</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for message in messages%}
+                <tr>
+                    <td>{{message.message}}</td>
+                    <td>{{message.emotion}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </section>
-</body>
-</html>
+
+{% endblock content %}

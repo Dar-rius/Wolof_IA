@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Le projet consiste à écrire des messages en wolof sur des événements marquant et précisées les émotions pour entraîner une intelligence artificielle"/>
+    <meta name="robots" content="index, follow ">
+
+    <meta property="og:title" content="Contribuer à un projet sur l’intelligence artificielle" />
+    <meta property="og:description" content="Le projet consiste à écrire des messages en wolof sur des événements marquant et précisées les émotions pour entraîner une intelligence artificielle" />
+    <meta property="og:url" content="https://wolofia.herokuapp.com/message_ia/ia/" />
+    <meta property="og:site_name" content="Wolof_IA" />
+    <meta property="og:image" content="https://dribbble.com/shots/15464621-Cafe-chatbot/attachments/7236902?mode=media" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="Wolof_IA" />
+    <meta name="twitter:title" content="Contribuer à un projet sur l’intelligence artificielle" />
+    <meta name="twitter:description" content="Le projet consiste à écrire des messages en wolof sur des événements marquant et précisées les émotions pour entraîner une intelligence artificielle" />
+    <meta name="twitter:image" content="https://dribbble.com/shots/15464621-Cafe-chatbot/attachments/7236902?mode=media" />
+    
+    <link rel="stylesheet"  type="text/css" href="{% static 'src/global.css' %}" />
+    <link rel='canonical' href="https://wolofia.herokuapp.com/message_ia/ia/" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'ia.png' %}"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contribuer à un projet sur l’intelligence artificielle</title>
+</head>
+<body>
+    {% include "components/header.html" %}
+    <main class="bg-green-90l">
+        {% block content %}
+        {% endblock content %}
+    </main>
+</body>
+</html>
