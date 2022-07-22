@@ -44,7 +44,7 @@ table{
 
 
 th,td {
-	padding: .30em 3em;
+	padding: .30em 5em;
 	text-align: left;
 }
 
@@ -99,21 +99,27 @@ p{
     p{
         padding-right: 0%;
     }
-}
 
-
-@media only screen and (max-width: 900px){
+    body{
+        font-weight: 300;
+    }
 
     .data{
-        margin-top: 5%;
+        margin-top: 10%;
+
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
 
     .data{
         margin-right: 50%;
         margin-left: 50%;
+    }
+
+    th,td {
+        padding: .30em 3em;
+        text-align: left;
     }
 }
 
