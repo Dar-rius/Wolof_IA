@@ -29,15 +29,15 @@ Et suivre les étapes suivantes ⬇️
 
 Windows
 
-```$ py -m venv wolof_ia```
+```$ py -m venv wolof-ai_project```
 
 Linux
 
-```$ python3 -m venv wolof_ia```
+```$ python3 -m venv wolof-ai_project```
 
 Changer de répetoire
 
-```$ cd message_wolof```
+```$ cd wolof-ai_project```
 
 #### 2 - Activer l'environnement
 
@@ -89,9 +89,9 @@ Dans votre navigateur tapez : ``localhost:8000``
 
 Routes | Utilités
 -------| -----------------------------------
-home/  | Page d'accueil
-data/  | Liste des messages et leur labels
-ia/    |  Tester les modèles
+accueil/  | Page d'accueil
+messages/  | Liste des messages et leur labels
+services/    |  Tester les modèles
 
 #### ℹ️ Dossiers importants
 
