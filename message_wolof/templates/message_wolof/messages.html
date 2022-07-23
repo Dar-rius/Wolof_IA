@@ -12,7 +12,8 @@
             </thead>
             <tbody>
                 {% for message in messages%}
-                <tr>
+                <tr class="border-b border-teal-900 
+                    bg-{% if message.emotion|lower == 'positive' %}teal-700{% else %}blue-800{% endif %}/25">
                     <td>{{message.message}}</td>
                     <td>{{message.emotion}}</td>
                 </tr>
