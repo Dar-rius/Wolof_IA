@@ -12,7 +12,6 @@ import pandas as pd
 def index_view(request):
     # recuperation des donnees des champs du formulaires lorsqu'une methode POST est passe
     form = FormMessage(request.POST)
-
     #si les donnees sont valides, ils seront enregistre dans la base de donnee
     # et l'utilisateur sera renvoyer vers la page data
     if form.is_valid():
@@ -29,6 +28,7 @@ def index_view(request):
     else:
         form = FormMessage
 
+
     #la page dont retourne la fonction avec les champs du formulaires
     return render(request, 'message_wolof/index.html', {'form': form})
 
@@ -39,8 +39,21 @@ def redirect_view(request):
 
 #la fonction d'affichage pour la page "data"
 def data_view(request):
+
     #recuperation de toutes les messages en wolof avec leur emotions stocker dans la base de donnees
     messages = Message_wolof.objects.all()
+
+    sentences = ["bonjour"]
+    for word in sentences:
+        data = Message_wolof.objects.filter(message__icontains=word)
+        data.delete()
+
+
+
+    #Update data in file csv
+    connexion_sql = sqlite3.connect("db.sqlite3")
+    df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
+    df.to_csv("machine_learning/data/messages.csv")
 
     #la page dont retourne la fonction
     return render(request, 'message_wolof/messages.html', {'messages': messages})
