@@ -45,10 +45,10 @@ def data_view(request):
     messages = Message_wolof.objects.all()
 
     # Liste de mots en francais qui nous servira de verifier si une phrase est en francais et de le supprimer si c'est le cas. 
-    sentences = ['bonjour', 'bonsoir', 'bonne soirée', 'bonne soiree', 'soir', 'matin', 'nuit', 'au revoir', 'eau', 'eu ', 'sa va', 'va', 'ca va', 'avais']
+    words = ['bonjour', 'bonsoir', 'bonne soirée', 'bonne soiree', 'soir', 'matin', 'nuit', 'au revoir', 'eau', 'eu ', 'sa va', 'va', 'ca va', 'avais']
 
     # Boucle for permettant de supprimer les phrases ecrirte en francais 
-    for word in sentences:
+    for word in words:
         data = Message_wolof.objects.filter(message__icontains=word)
         data.delete()
 
