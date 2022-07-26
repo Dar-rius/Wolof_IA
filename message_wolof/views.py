@@ -43,12 +43,13 @@ def data_view(request):
     #recuperation de toutes les messages en wolof avec leur emotions stocker dans la base de donnees
     messages = Message_wolof.objects.all()
 
+    # Liste de mots en francais qui nous servira de verifier si une phrase est en francais et de le supprimer si c'est le cas. 
     sentences = ["bonjour"]
+
+    # Boucle for permettant de supprimer les phrases ecrirte en francais 
     for word in sentences:
         data = Message_wolof.objects.filter(message__icontains=word)
         data.delete()
-
-
 
     #Update data in file csv
     connexion_sql = sqlite3.connect("db.sqlite3")
