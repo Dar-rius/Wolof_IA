@@ -32,19 +32,20 @@ def index_view(request):
     #la page dont retourne la fonction avec les champs du formulaires
     return render(request, 'message_wolof/index.html', {'form': form})
 
+
 #une fonction qui lorsque le visiteur arrive sur le route "/" il sera renvoyer vers la page home de l'appli (/message_wolof/home/) 
 def redirect_view(request):
     #redirection vers la page "home"
     return redirect('home')
 
+
 #la fonction d'affichage pour la page "data"
 def data_view(request):
-
     #recuperation de toutes les messages en wolof avec leur emotions stocker dans la base de donnees
     messages = Message_wolof.objects.all()
 
     # Liste de mots en francais qui nous servira de verifier si une phrase est en francais et de le supprimer si c'est le cas. 
-    sentences = ["bonjour"]
+    sentences = ['bonjour', 'bonsoir', 'bonne soirée', 'bonne soiree', 'soir', 'matin', 'nuit', 'au revoir', 'eau', 'eu ', 'sa va', 'va', 'ca va', 'avais']
 
     # Boucle for permettant de supprimer les phrases ecrirte en francais 
     for word in sentences:
@@ -58,6 +59,7 @@ def data_view(request):
 
     #la page dont retourne la fonction
     return render(request, 'message_wolof/messages.html', {'messages': messages})
+
 
 #La fonction d'affichage pour la page "ia"
 def ai_view(request):
