@@ -46,9 +46,15 @@ def data_view(request):
 
     # Liste de mots en francais qui nous servira de verifier si une phrase est en francais et de le supprimer si c'est le cas. 
     words = ['bonjour', 'bonsoir', 'bonne soirée', 'bonne soiree', 'soir', 'matin', 'nuit', 'au revoir', 'eau', 'eu ', 'sa va', 'va', 'ca va', 'avais']
+    tableau = {
+        "phrases": ["salut tout le monde", "bonsoir", "toi la "],
+        "languages": ["wolof", "francais", "wolof"]
+    }
+    dataframe = pd.DataFrame(tableau)
+    datafr = dataframe["phrases"][dataframe['languages']=="francais"]
 
     # Boucle for permettant de supprimer les phrases ecrirte en francais 
-    for word in words:
+    for word in datafr:
         data = Message_wolof.objects.filter(message__icontains=word)
         data.delete()
 
