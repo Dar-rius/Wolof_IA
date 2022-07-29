@@ -1,4 +1,4 @@
-#Importation des differents modules
+#Importation des differents de  modules
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import FormMessage
@@ -9,13 +9,14 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response 
 from .serializer import Message_wolof_serializers
 import pickle
+import sklearn
 
 
 """class CustomerView(viewsets.ModelViewSet): 
     queryset = Message_wolof.objects.all() 
     serializer_class = Message_wolof_serializers """
 
-#Une forction permmettant d'utiliser le model afin qu'il fasse des predictions
+#Une forction permmettant d'utiliser le model afin qu'il fasse des predictions sur les messages
 def model_predict(data):
     try:
         model = pickle.load(open("./machine_learning/models/languagesTraitor.sav", 'rb'))
