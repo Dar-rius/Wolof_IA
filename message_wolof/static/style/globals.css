@@ -68,6 +68,12 @@ p{
     padding-right: 6%;
 }
 
+.message_error{
+    font-size: larger;
+    color: #8E44AD;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 900px){
 
     .sec{
