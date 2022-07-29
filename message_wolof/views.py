@@ -1,7 +1,7 @@
 #Importation des differents de  modules
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .forms import FormMessage
+from .forms import FormMessage, FormSentences
 from .models import Message_wolof
 import sqlite3
 import pandas as pd
@@ -82,4 +82,24 @@ def ai_view(request):
     #la page dont retourne la fonction
     return render(request, 'message_wolof/services.html', {})
 
-    
+
+def testAI_view(request):
+    form = FormSentences(request.POST)
+    prediction = ""
+
+    if form.is_valid():
+        Sentence = form.cleaned_data['sentence']
+        data  = [Sentence]
+        value_predict = model_predict(data)
+
+        if value_predict == 2:
+            prediction = "Wolof"
+        else: 
+            prediction ="Autres langues"
+    elif "no_correct" in request.POST:
+        form.save()
+    else:
+        form = FormSentences
+
+    #la page dont retourne la fonction avec les champs du formulaires
+    return render(request, 'message_wolof/test.html', {'form': form, 'prediction': prediction})

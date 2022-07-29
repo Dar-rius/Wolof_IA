@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.redirect_view, name='redirect'),
     path('accueil/', views.index_view, name='home'),
     path('messages/', views.data_view, name='data'),
-    path('services/', views.ai_view, name='ia')
+    path('services/', views.ai_view, name='ia'),
+    path('test/', views.testAI_view, name='test')
 ]
