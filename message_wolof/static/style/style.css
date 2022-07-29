@@ -61,7 +61,11 @@ th,td {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+}
 
+.sec3{
+    text-align: center;
+    
 }
 
 p{

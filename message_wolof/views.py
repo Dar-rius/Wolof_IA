@@ -92,11 +92,10 @@ def testAI_view(request):
         data  = [Sentence]
         value_predict = model_predict(data)
 
-        if value_predict == 2:
+        if value_predict != 0:
             prediction = "Wolof"
         else: 
-            prediction ="Autres langues"
-    elif "no_correct" in request.POST:
+            prediction ="Francais"
         form.save()
     else:
         form = FormSentences
