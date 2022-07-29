@@ -5,6 +5,27 @@ from .forms import FormMessage
 from .models import Message_wolof
 import sqlite3
 import pandas as pd
+from rest_framework import viewsets, status
+from rest_framework.response import Response 
+from .serializer import Message_wolof_serializers
+import pickle
+
+
+class CustomerView(viewsets.ModelViewSet): 
+    queryset = Message_wolof.objects.all() 
+    serializer_class = Message_wolof_serializers 
+
+
+def model_predict(data):
+    try:
+        model = pickle.load(open("./machine_learning/models/languagesTraitor.sav", 'rb'))
+        data = data
+        prediction = model.predict(data)
+        return int(prediction)
+
+    except ValueError as e: 
+        return Response(e.args[0], status.HTTP_400_BAD_REQUEST) 
+
 
 # Creation des fonctions d'affichage pour les differents routes
 
@@ -15,15 +36,18 @@ def index_view(request):
     #si les donnees sont valides, ils seront enregistre dans la base de donnee
     # et l'utilisateur sera renvoyer vers la page data
     if form.is_valid():
-        form.save()
+        Message = form.cleaned_data['message']
+        data  = [Message]
+        prediction = model_predict(data)
+        print(prediction)
+        if prediction != 0:
+            form.save()
+            #Update data in file csv
+            connexion_sql = sqlite3.connect("db.sqlite3")
+            df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
+            df.to_csv("machine_learning/data/messages.csv")
+            return redirect('data')
 
-        #Update data in file csv
-        connexion_sql = sqlite3.connect("db.sqlite3")
-        df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
-        df.to_csv("machine_learning/data/messages.csv")
-
-        return redirect('data')
-        
     # Si non rien ne sera stocker dans la base de donnees
     else:
         form = FormMessage
