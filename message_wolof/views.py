@@ -9,6 +9,7 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response 
 from .serializer import Message_wolof_serializers
 import pickle
+import sklearn
 
 
 """class CustomerView(viewsets.ModelViewSet): 

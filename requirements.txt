@@ -9,3 +9,4 @@ tzdata==2022.1
 whitenoise==6.2.0
 pandas==1.4.3
 djangorestframework==3.13.1
+sklearn==1.1.1
