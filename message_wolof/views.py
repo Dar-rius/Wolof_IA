@@ -44,7 +44,6 @@ def index_view(request):
 
         if prediction != 0:
             form.save()
-
             #Update data in file csv
             connexion_sql = sqlite3.connect("db.sqlite3")
             df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
