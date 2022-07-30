@@ -63,8 +63,19 @@ th,td {
     flex-wrap: wrap;
 }
 
+#test{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 40%;
+    margin-right : 40%;
+    margin-bottom: 5%;
+}
+
 .sec3{
     text-align: center;
+    margin-top: 2%;
     
 }
 

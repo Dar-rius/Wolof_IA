@@ -94,9 +94,13 @@ def testAI_view(request):
 
         if value_predict != 0:
             prediction = "Wolof"
+            form.save()
+            #Update data in file csv
+            connexion_sql = sqlite3.connect("db.sqlite3")
+            df = pd.read_sql_query("SELECT * from message_wolof_sentences_wolof", connexion_sql)
+            df.to_csv("machine_learning/data/langues/sentence_test.csv")
         else: 
             prediction ="Francais"
-        form.save()
     else:
         form = FormSentences
 

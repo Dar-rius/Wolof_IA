@@ -6,7 +6,10 @@
 
     <div class="flex flex-col flex-1 gap-8">
         <h3 class="text-4xl font-bold">Contribuer a l'evolution de l'IA</h3>
-        <p class=" text-xl">Reponse de l'IA: {{prediction}}</p>
+        <div class=" text-xl" id="test">
+           <p>Reponse de l'IA:</p>  
+           <p>{{prediction}}</p>
+        </div>
     </div>
 
     <div class="flex-1">
@@ -26,7 +29,7 @@
 
         <div>
         <input 
-            class="text-white font-bold bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            class="text-white font-bold bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-medium px-10 py-3 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             type="submit" 
             value="Tester">
         </div>
