@@ -5,7 +5,8 @@
 <section class="sec3">
 
     <div class="flex flex-col flex-1 gap-8">
-        <h3 class="text-4xl font-bold">Contribuer a l'evolution de l'IA</h3>
+        <h3 class="text-3xl font-bold">Contribuer a l'evolution de l'IA</h3>
+        <p class="text-xl" id="sentence">les phrases que vous aurez entrez dans le formulaire permettra à l'IA de mieux catégoriser les phrases qui sont en wolof et ceux qui ne le sont pas </p>
         <div class=" text-xl" id="test">
            <p>Reponse de l'IA:</p>  
            <p>{{prediction}}</p>
@@ -20,8 +21,8 @@
         <div class="">
             {{ form.subject.errors }}
             
-            <textarea name="sentence" id="id_message" rows="3" 
-                class="outline-none  p-2.5 w-2/4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            <textarea name="sentence" id="id_test" rows="3" 
+                class="outline-none  p-2.5 w-3/4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                 placeholder="Veillez entrer message uniquement en wolof"
                 required minlength="6"
                 /></textarea>
