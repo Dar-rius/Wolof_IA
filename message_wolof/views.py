@@ -46,12 +46,12 @@ def index_view(request):
         if prediction != 0:
             form.save()
             #Update data in file csv
-            #connexion_sql = sqlite3.connect("db.sqlite3")
-            #df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
-            #df.to_csv("machine_learning/data/messages.csv")
+            connexion_sql = sqlite3.connect("db.sqlite3")
+            df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
+            df.to_csv("machine_learning/data/messages.csv")
             return redirect('data')
         else:
-            error = "Veillez ecrire une phrase en wolof"
+            error = "Veillez entrer une phrase en wolof"
 
     # Si non rien ne sera stocker dans la base de donnees
     else:
@@ -88,17 +88,18 @@ def testAI_view(request):
     prediction = ""
 
     if form.is_valid():
+        form.save()
+        #Update data in file csv
+        connexion_sql = sqlite3.connect("db.sqlite3")
+        df = pd.read_sql_query("SELECT * from message_wolof_sentences_wolof", connexion_sql)
+        df.to_csv("machine_learning/data/langues/sentence_test.csv")
+        
         Sentence = form.cleaned_data['sentence']
         data  = [Sentence]
         value_predict = model_predict(data)
 
         if value_predict != 0:
             prediction = "Wolof"
-            form.save()
-            #Update data in file csv
-            #connexion_sql = sqlite3.connect("db.sqlite3")
-            #df = pd.read_sql_query("SELECT * from message_wolof_sentences_wolof", connexion_sql)
-            #df.to_csv("machine_learning/data/langues/sentence_test.csv")
         else: 
             prediction ="Francais"
     else:
