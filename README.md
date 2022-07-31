@@ -91,7 +91,8 @@ Routes | Utilités
 -------| -----------------------------------
 accueil/  | Page d'accueil
 messages/  | Liste des messages et leur labels
-services/    |  Tester les modèles
+services/    |  Utiliser les modèles pour des projets
+test/    |  Tester les modèles
 
 #### ℹ️ Dossiers importants
 
@@ -99,6 +100,7 @@ Dossiers       | Utilités
 ---------------|------------------------------------
 server         | Serveur de l'application web
 message_wolof  | L'application web
+machine_leaning| Developpement des modèles de machine learning
 
 ### Machine Learning 🤖
 
