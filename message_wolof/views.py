@@ -101,7 +101,7 @@ def testAI_view(request):
         if value_predict != 0:
             prediction = "Wolof"
         else: 
-            prediction ="Francais"
+            prediction ="Français"
     else:
         form = FormSentences
 
