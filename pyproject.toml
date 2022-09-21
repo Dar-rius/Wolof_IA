@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "wolof-ia"
+version = "0.1.0"
+description = "Une appli web pour entraîner des modèles de machine learning à comprendre les messages en wolof afin de les catégoriser grâce aux messages labelliser entrée par les visiteurs dans l’application."
+authors = ["Dar-rius <mohamedtine17@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "wolof_ia"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.12"
+asgiref = "^3.5.2"
+dj-database-url = "^1.0.0"
+Django = "^4.1.1"
+django-heroku = "^0.3.1"
+djangorestframework = "^3.13.1"
+joblib = "^1.2.0"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+psycopg2 = "2.9.3"
+python-dateutil = "^2.8.2"
+python-dotenv = "^0.21.0"
+pytz = "^2022.2.1"
+scikit-learn = "^1.1.2"
+scipy = "^1.9.1"
+six = "^1.16.0"
+sklearn = "^0.0"
+sqlparse = "^0.4.2"
+threadpoolctl = "^3.1.0"
+tzdata = "^2022.2"
+whitenoise = "^6.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
