@@ -15,7 +15,7 @@ class ScrapSite:
         self.site = self.site.read().decode("utf-8")
         
         self.soup = BeautifulSoup(self.site, "html.parser")
-        self.findBalises = self.soup.find(balise)
+        self.findBalises = self.soup.find_all(balise)
         if self.findBalises == None:
             print("Balise introuvable")
         else:
