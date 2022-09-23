@@ -34,26 +34,27 @@ def model_predict(data):
 def index_view(request):
     # recuperation des donnees des champs du formulaires lorsqu'une methode POST est passe
     error =""
-    form = FormMessage(request.POST)
-    #si les donnees sont valides, ils seront enregistre dans la base de donnee
-    # et l'utilisateur sera renvoyer vers la page data
-    if form.is_valid():
-        Message = form.cleaned_data['message']
-        data  = [Message]
-        prediction = model_predict(data)
-        print(prediction)
+    if request.method == "POST":
+        form = FormMessage(request.POST)
+        #si les donnees sont valides, ils seront enregistre dans la base de donnee
+        # et l'utilisateur sera renvoyer vers la page data
+        if form.is_valid():
+            Message = form.cleaned_data['message']
+            data  = [Message]
+            prediction = model_predict(data)
+            print(prediction)
 
-        if prediction != 0:
-            form.save()
-            #Update data in file csv
-            connexion_sql = sqlite3.connect("db.sqlite3")
-            df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
-            df.to_csv("machine_learning/data/messages.csv")
-            return redirect('data')
-        else:
-            error = "Veillez entrer une phrase en wolof"
+            if prediction != 0:
+                form.save()
+                #Update data in file csv
+                connexion_sql = sqlite3.connect("db.sqlite3")
+                df = pd.read_sql_query("SELECT * from message_wolof_message_wolof", connexion_sql)
+                df.to_csv("machine_learning/data/messages.csv")
+                return redirect('data')
+            else:
+                error = "Veillez entrer une phrase en wolof"
 
-    # Si non rien ne sera stocker dans la base de donnees
+        # Si non rien ne sera stocker dans la base de donnees
     else:
         form = FormMessage
 
@@ -78,30 +79,30 @@ def data_view(request):
 
 #La fonction d'affichage pour la page "ia"
 def ai_view(request):
-
     #la page dont retourne la fonction
     return render(request, 'message_wolof/services.html', {})
 
 
 def testAI_view(request):
-    form = FormSentences(request.POST)
     prediction = ""
+    if request.method == "POST":
+        form = FormSentences(request.POST)
 
-    if form.is_valid():
-        form.save()
-        #Update data in file csv
-        connexion_sql = sqlite3.connect("db.sqlite3")
-        df = pd.read_sql_query("SELECT * from message_wolof_sentences_wolof", connexion_sql)
-        df.to_csv("machine_learning/data/langues/sentence_test.csv")
-        
-        Sentence = form.cleaned_data['sentence']
-        data  = [Sentence]
-        value_predict = model_predict(data)
+        if form.is_valid():
+            form.save()
+            #Update data in file csv
+            connexion_sql = sqlite3.connect("db.sqlite3")
+            df = pd.read_sql_query("SELECT * from message_wolof_sentences_wolof", connexion_sql)
+            df.to_csv("machine_learning/data/langues/sentence_test.csv")
+            
+            Sentence = form.cleaned_data['sentence']
+            data  = [Sentence]
+            value_predict = model_predict(data)
 
-        if value_predict != 0:
-            prediction = "Wolof"
-        else: 
-            prediction ="Français"
+            if value_predict != 0:
+                prediction = "Wolof"
+            else: 
+                prediction ="Français"
     else:
         form = FormSentences
 
