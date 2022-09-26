@@ -15,7 +15,7 @@ class ScrapSite:
         self.site = self.site.read().decode("utf-8")
         
         self.soup = BeautifulSoup(self.site, "html.parser")
-        self.findBalises = self.soup.find_all(balise)
+        self.findBalises = list(self.soup.find_all(balise))
         if self.findBalises == None:
             print("Balise introuvable")
         else:
@@ -24,10 +24,14 @@ class ScrapSite:
             return self.findBalises
         
 
-    def recupdata(self, data):
+    def recupData(self, data):
         if data is None: 
             print("aucune valeur trouver")
         else:
-            self.dataToString = [data.string]
+            self.dataToString = []
+            for i in data:
+                newSetence = re.sub("<[^>]*>", "", str(i), re.IGNORECASE)
+                self.dataToString.append(newSetence)
+
             print(self.dataToString)
             return self.dataToString

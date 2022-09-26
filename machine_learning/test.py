@@ -1,6 +1,6 @@
 from utils import ScrapSite
 
 scrapping = ScrapSite()
-scrap = scrapping.scanSite("https://www.socolas-blog.com/parler-senegal-vocabulaire-wolof-diola-peul/", "tr")
+scrap = scrapping.scanSite("https://www.socolas-blog.com/parler-senegal-vocabulaire-wolof-diola-peul/", "td")
 
-#recup = scrapping.recupdata(scrap)
+recup = scrapping.recupData(scrap)
