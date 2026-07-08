@@ -1,31 +1,32 @@
 # Wolof IA
 
-L’objectif est de créer plusieurs `dataset` sur des messages écrit en Wolof afin d'être utilisé pour entraîner des modèles de machine learning pour plusieurs raisons :
+The objective is to curate multiple datasets based on Wolof-language messages to train machine learning models for several purposes:
 
-- Détecter les sentiments.
-- Détecter la satisfaction d’une personne envers un produit.
-- Détecter l'intérêt d’une personne envers un produit.
+- Sentiment analysis.
+- Detecting user satisfaction with a product.
+- Detecting user interest in a product.
 
-Les modèles seront ensuite exportés sous forme d’`API` pour être utilisé dans des projets nécessitant l’aide d’une IA.
+These models will then be deployed as APIs to be integrated into projects requiring AI capabilities.
 
 [![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal)
 
 ## Description 📃
 
-La plateforme est une application web développée avec le framework Django, dedans les  visiteurs devront entrer un ou plusieurs messages parlant d’un événement qui leur a marquer puis devront préciser l'émotion qu’ils ont ressenti sur cet événement entre positive ou négative, après tout ceci les messages seront enregistrer dans une base de donnée en `sqlite3` et extrait de la base de donnée pour entraîner un modèle de machine learning.  
-Une fois le modèle entraîné, il sera exporté vers le serveur de l’application web pour être testé par les visiteurs du site.
+The platform is a Django-based web application. Users input messages describing memorable events and label them as either 'positive' or 'negative'. This data is persisted in a `sqlite3` database and subsequently processed to train a machine learning model.  
+Once trained, the model is deployed to the server, allowing site visitors to test its inference capabilities in real-time.
 
-## Exigence pour le développement ✅
+## Development Requirements ✅
 
-### Application web 🌐
+### Web Application 🌐
 
-Pour travailler sur ce projet vous devez en premier installer :
+To work on this project, you must first install:
 
 ``python (3.10+)`` et ``pip``
 
-Et suivre les étapes suivantes ⬇️
+And follow the steps below ⬇️ 
 
-#### 1 - Créer un environnement virtuel
+
+#### 1 - Create a virtual environment
 
 Windows
 
@@ -35,11 +36,12 @@ Linux
 
 ```$ python3 -m venv wolof-ai_project```
 
-Changer de répetoire
+Change directory
 
 ```$ cd wolof-ai_project```
 
-#### 2 - Activer l'environnement
+
+#### 2 - Activate environment
 
 Windows
 
@@ -49,7 +51,7 @@ Linux
 
 ```$ source bin/activate```
 
-#### 3 - Installation du projet
+#### 3 - Clone repos
 
 ```bash
 $ git clone https://github.com/Dar-rius/Wolof_IA.git
@@ -57,7 +59,8 @@ $ git clone https://github.com/Dar-rius/Wolof_IA.git
 $ cd Wolof_IA
 ```
 
-#### 4 - Installation des dépendances
+
+#### 4 - Install dependecies
 
 Windows
 
@@ -73,7 +76,7 @@ $ sudo apt install libpq-dev
 $ pip3 install -r requirements.txt
 ```
 
-#### 5 - Executer le serveur
+#### 5 - Run server
 
 Windows
 
@@ -83,40 +86,34 @@ Linux
 
 ```$ python3 manage.py runserver```
 
-Dans votre navigateur tapez : ``localhost:8000``
+In your browser, enter the following: ``localhost:8000``
 
 #### 🛣️ Routes
 
-Routes | Utilités
+Routes | Utilies
 -------| -----------------------------------
-accueil/  | Page d'accueil
-messages/  | Liste des messages et leur labels
-services/    |  Utiliser les modèles pour des projets
-test/    |  Tester les modèles
+accueil/  | Home Page
+messages/  | List of messages and their labeles
+services/    |  Use models for projects
+test/    |  Testd models
 
 #### ℹ️ Dossiers importants
 
-Dossiers       | Utilités
+Dossiers       | Utilities
 ---------------|------------------------------------
-server         | Serveur de l'application web
-message_wolof  | L'application web
-machine_leaning| Developpement des modèles de machine learning
-
-### Machine Learning 🤖
-
-En cours ...
-> Arrivera une fois qu’il y aura suffisamment de données à traiter par les modèles.
+server         | Backend
+message_wolof  | Frontend
+machine_leaning| Machine Learning models
 
 ## Contribution 🌍
 
-Merci de votre intérêt pour ce projet, nous essayons de fournir un bon environnement de collaboration pour toutes les personnes impliquées.
+Thank you for your interest in this project. We strive to provide a collaborative environment for everyone involved.
 
-Le projet est encore à ses débuts et seul l’application web est terminée.  
-Pour contribuer vous pouvez alimenter la base de donnée via la plateforme en écrivant des messages en Wolof sur des événement qui vous ont marqués et en précisant l'émotion ressentie dans cet événement.
+The project is in its early stages, and only the web application is currently complete. 
+To contribute, you can populate the database via the platform by submitting Wolof messages regarding memorable events and labeling the associated sentiment
 
-Signaler les problèmes que vous avez rencontrés en [ouvrant un Issue](https://github.com/Dar-rius/Wolof_IA/issues), si vous souhaitez améliorer la plateforme en ajoutant des sections, fonctionnalitées ou modifier la conception de la plate-forme nous vous recommandons [d’ouvrir un Issue](https://github.com/Dar-rius/Wolof_IA/issues) en précisant vos intentions, pour ne pas gaspiller votre temps. Vous pouvez également contribuer aux tâches qui sont actuellement en cours.  
-Lorsque vous voudrez fusionner les modifications que vous avez réalisé au projet sur GitHub, ouvrez un [Pull Request](https://github.com/Dar-rius/Wolof_IA/pulls).
+Report any issues you encounter by [ouvrant un Issue](https://github.com/Dar-rius/Wolof_IA/issues), If you wish to improve the platform by adding sections, features, or modifying the design, we recommend [d’ouvrir un Issue](https://github.com/Dar-rius/Wolof_IA/issues) first to detail your intentions and avoid wasted effort. You can also contribute to tasks currently in progress. When you are ready to merge your changes into the project on GitHub, please open a [Pull Request](https://github.com/Dar-rius/Wolof_IA/pulls).
 
 ## License 🎫
 
-Ce projet est sous Licence [MIT](License)
+This project use the [MIT](License) license
