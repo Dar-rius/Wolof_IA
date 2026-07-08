@@ -112,7 +112,7 @@ Thank you for your interest in this project. We strive to provide a collaborativ
 The project is in its early stages, and only the web application is currently complete. 
 To contribute, you can populate the database via the platform by submitting Wolof messages regarding memorable events and labeling the associated sentiment
 
-Report any issues you encounter by [ouvrant un Issue](https://github.com/Dar-rius/Wolof_IA/issues), If you wish to improve the platform by adding sections, features, or modifying the design, we recommend [d’ouvrir un Issue](https://github.com/Dar-rius/Wolof_IA/issues) first to detail your intentions and avoid wasted effort. You can also contribute to tasks currently in progress. When you are ready to merge your changes into the project on GitHub, please open a [Pull Request](https://github.com/Dar-rius/Wolof_IA/pulls).
+Report any issues you encounter by [open an issue](https://github.com/Dar-rius/Wolof_IA/issues), If you wish to improve the platform by adding sections, features, or modifying the design, we recommend [open an issue](https://github.com/Dar-rius/Wolof_IA/issues) first to detail your intentions and avoid wasted effort. You can also contribute to tasks currently in progress. When you are ready to merge your changes into the project on GitHub, please open a [Pull Request](https://github.com/Dar-rius/Wolof_IA/pulls).
 
 ## License 🎫
 
